@@ -17,6 +17,7 @@
     --global-gray-400: #e6e6e6;
     --global-gray-500: #aaaaaa;
     --heading-font: Futura, sans-serif;
+    --section-bg-1: #ebebeb;
 }
 
 
@@ -798,4 +799,151 @@ footer {
 .footer_icon a {
   color: var(--secondary-color);
   font-size: 24px;
+}
+
+
+/* Login Section */
+
+.login-section .item {
+  border: 1px solid#e9e7e7;
+  padding: 32px 39px 20px;
+  height: 100%;
+}
+
+.login-section .item  h2, .login-section .item  h1 {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 0 14px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.login-section .item p{
+  font-size: 14px;
+  line-height: 22px;
+  color: #777777;
+}
+
+.login-section ::placeholder, .contact-section ::placeholder, .comment-form ::placeholder {
+      font-size: 13.5px; 
+}
+
+.icon {
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+/* pagination */
+
+.pagination .page-item .page-link {
+  border-radius: 8px;
+  color: #001e2b;
+}
+
+.pagination .active>.page-link, .pagination .page-link.active {
+  background-color: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: #fff;
+  z-index: 3;
+}
+
+
+/* blog single section */
+.blog-single-desc a {
+  font-size: 35px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111111;
+}
+
+.blog-single-img img {
+  border-radius: 20px;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.tag-option a {
+  text-decoration: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 600;
+  background-color: #e6e6e6;
+  transition: 0.5s ease;
+}
+
+.tag-option a:hover {
+  color: #fff;
+  background-color: var(--btn-bg);
+}
+
+.comment-thumb img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.comment-info h5 {
+  color: #252b61;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.comment-info span {
+  color: #000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.comment-meta a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.blog-single-share p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.share-link a {
+  color: var(--btn-bg);
+}
+
+
+blockquote {
+  font-size: 28px;
+  font-family: var(--heading-font);
+  line-height: 40px;
+  font-weight: 700;
+  background-color: var(--section-bg-1);
+  padding: 60px 50px 60px 60px;
+  margin: 50px 0;
+  font-style: normal;
+  border-left: 0;
+  position: relative;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.quote {
+  font-size: 20px;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.quote-icon {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+
+.date-comm {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--btn-bg);
 }
