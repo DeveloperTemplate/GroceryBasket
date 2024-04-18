@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | ElectraHive eCommerce</title>
+    <title>Cart | ElectraHive eCommerce</title>
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- Header Section Start -->
-    <header class="navigation shadow-sm border-bottom">
+     <!-- Header Section Start -->
+     <header class="navigation shadow-sm border-bottom">
         <!-- Navbar Sticky -->
         <div class="navbar-sticky">
             <!-- Navbar -->
@@ -210,60 +210,318 @@
         <!-- Navbar Sticky -->
     </header>
 <!-- Header Section End -->
+
     <main>
-        <!-- section -->
-        <section class="mt-100 login-section">
-           <div class="container">
-              <!-- row -->
-              <div class="row justify-content-center align-items-center px-3">
-                 <!-- col -->
-                 <div class="col-xs-12 col-md-6">
-                    <div class="item">
-                        <div class="mb-1">
-                            <h1>Create An Account</h1>
-                        </div>
-                        <form>
-                            <div class="row g-3">
-                                <!-- row -->
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formFirstName" placeholder="Enter First Name" required="">
+        <!-- section-->
+        <div class="product-checkout">
+            <div class="mt-4">
+                <div class="container">
+                   <!-- row -->
+                   <div class="row">
+                      <!-- col -->
+                      <div class="col-12">
+                         <!-- breadcrumb -->
+                         <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                               <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                               <li class="breadcrumb-item"><a href="#!">Shop</a></li>
+                               <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                            </ol>
+                         </nav>
+                      </div>
+                   </div>
+
+                  
+                    <div class="row mt-5">
+                          <div class="col-lg-12">
+                                <h5 class="bg-">Returning customer?
+                                <a  data-bs-toggle="collapse" class="text-primary" href="#collapseLogin" role="button" aria-expanded="false" aria-controls="collapseLogin">
+                                    Click here to login
+                                </a>
+                              </h5>
+                              <div class="collapse" id="collapseLogin">
+                                <div class="">
+                                    <p>Please login your accont.</p>
+                                    <form action="#">
+                                        <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="input-item input-item-name gs_input_area d-flex justify-content-between">
+                                                <input type="text" name="gs_name" placeholder="UserName or email">
+                                                <i class="bi bi-person"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="input-item input-item-email gs_input_area d-flex justify-content-between">
+                                                <input type="password" name="gs_password" placeholder="Password">
+                                                <i class="bi bi-lock"></i>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <button class="btn btn-primary text-uppercase">Login</button>
+                                            <label class="input-info-save mb-0 mt-4 mx-3"><input type="checkbox" name="agree"> Remember me</label>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formLastName" class="form-label">Last Name<span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formLastName" placeholder="Enter Last Name" required="">
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formSigninEmail" class="form-label">Email<span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formSigninEmail" placeholder="Enter Email" required="">
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <div class="password-field position-relative">
-                                        <label for="formSigninPassword" class="form-label">Password<span class="text-danger">*</span></label>
-                                        <div class="password-field position-relative">
-                                        <input type="password" class="form-control bg-light border-0 py-2" id="formSigninPassword" placeholder="Enter Password" required="">
+                              </div>
+                          </div>
+
+                        <div class="col-lg-12 mt-4">
+                            <h5 class="bg-">Have a coupon?
+                            <a  data-bs-toggle="collapse" class="text-primary" href="#collapseCoupon" role="button" aria-expanded="false" aria-controls="collapseLogin">
+                                Click here to enter your code
+                            </a>
+                          </h5>
+                          <div class="collapse" id="collapseCoupon">
+                            <div class="">
+                                <p>If you have a coupon code, please apply it below.</p>
+                                <form action="#">
+                                    <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="input-item input-item-name gs_input_area d-flex justify-content-between">
+                                            <input type="text" name="gs_name" placeholder="Coupon code">
                                         </div>
                                     </div>
-                                </div>
-                                <!-- btn -->
-                                <div class="d-flex justify-content-between mt-4">
-                                    <button type="submit" class="btn btn-primary px-4">Create</button>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button class="btn btn-primary text-uppercase">Apply Coupon</button>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-50">
+                         <div class="col-lg-8">
+                            <h4 class="title-2 mb-4">Billing Details</h4>
+                            <div class="checkout-info">
+                            <form action="#">
+                            <h6>Personal Information</h6>
+                            <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item input-item-name gs_input_area">
+                                <input type="text" name="gs_name" placeholder="First Name:">
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item input-item-name gs_input_area">
+                                <input type="text" name="gs_lastname" placeholder="Last Name:">
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item input-item-email gs_input_area">
+                                <input type="email" name="gs_email" placeholder="Email Address:">
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item input-item-phone gs_input_area">
+                                <input type="text" name="gs_phone" placeholder="Phone Number:">
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item input-item-website gs_input_area">
+                                <input type="text" name="gs_company" placeholder="Company Name (optional):">
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item input-item-website gs_input_area">
+                                <input type="text" name="gs_phone" placeholder="Company Address (optional):">
+                            </div>
+                            </div>
+                            </div>
+                            <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-4">
+                            <h6>Country</h6>
+                                <div class="input-item">
+                                    <select class="nice-option">
+                                    <option value="">Select your Country</option>
+                                    <option>United Kingdom (UK)</option>
+                                    <option>United States (US)</option>
+                                    <option>Bangladesh</option>
+                                    <option>Select Country</option>
+                                    <option>Australia</option>
+                                    <option>Canada</option>
+                                    <option>China</option>
+                                    <option>Morocco</option>
+                                    <option>Saudi Arabia</option>
+                                    </select>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </section>
+                            <div class="col-lg-12 col-md-12">
+                            <h6>Address</h6>
+                            <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item gs_input_area">
+                                <input type="text" placeholder="House Number and Street Name:">
+                            </div>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="input-item gs_input_area">
+                                <input type="text" placeholder="Apartment, unit etc. (optional):">
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                            <h6>Town / City</h6>
+                                <div class="input-item gs_input_area">
+                                <input type="text" placeholder="City:">
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                            <h6>State </h6>
+                                <div class="input-item gs_input_area">
+                                <input type="text" placeholder="State:">
+                            </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                            <h6>Zip</h6>
+                                <div class="input-item gs_input_area">
+                                <input type="text" placeholder="Zip Code:">
+                            </div>
+                            </div>
+                            </div>
+                            
+                            <h6>Order Notes (optional)</h6>
+                            <div class="input-item input-item-textarea gs_input_area">
+                                <textarea name="gs_message" rows="4" placeholder="Notes about your order, e.g. Special notes for Delivery:" required=""></textarea>
+                            </div>
+
+                            </form>
+                            </div>
+                         </div>
+                         <div class="col-lg-4 mt-5">
+                            <div class="card bg-white">
+                                <div class="card-header bg-white px-4">
+                                    <h2>Your Order</h2>
+                                </div>
+                                <div class="card-body p-0">
+                                        <div class="d-flex justify-content-between px-4 py-3">
+                                            <span class="p-summary-price">Subtotal</span>
+                                            <span class="p-summary-title">$100</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between  border-t">
+                                            <span class="p-summary-title">Delivery Charges</span>
+                                            <span class="p-summary-price">$40</span>
+                                        </div>
+                                    <div class="d-flex justify-content-between mt-2 border-t">
+                                        <span class="p-summary-total-title">Total Amount</span>
+                                        <span class="p-summary-total-price">$140</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mt-4">
+                                <div class="card-header bg-white px-4">
+                                    <h2>Payment Method</h2>
+                                </div>
+                                <div class="border-top border-width-3 border-color-1 pt-3 mb-3">
+                                    <!-- Basics Accordion -->
+                                    
+                                        <!-- Card -->
+                                        <div class="accordion" id="basicsAccordion1">
+                                            <div class="border-bottom border-color-1 border-dotted-bottom">
+                                              <div class="p-3" id="basicsHeadingFour">
+                                                <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" id="FourstylishRadio1" name="stylishRadio">
+                                                  <label class="custom-control-label form-label" for="FourstylishRadio1" data-bs-toggle="collapse" data-bs-target="#basicsCollapseOne" aria-expanded="true" aria-controls="basicsCollapseOne">
+                                                    Direct bank transfer
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div id="basicsCollapseOne" class="accordion-collapse collapse" aria-labelledby="basicsHeadingFour" data-bs-parent="#basicsAccordion1">
+                                                <div class="px-4 py-2">
+                                                    Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <!-- End Card -->
+    
+                                        <!-- Card -->
+                                        <div class="accordion" id="basicsAccordion2">
+                                            <div class="border-bottom border-color-1 border-dotted-bottom">
+                                              <div class="p-3" id="basicsHeadingFour">
+                                                <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" id="FourstylishRadio2" name="stylishRadio">
+                                                  <label class="custom-control-label form-label" for="FourstylishRadio2" data-bs-toggle="collapse" data-bs-target="#basicsCollapseTwo" aria-expanded="true" aria-controls="basicsCollapseTwo">
+                                                    Check payments
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div id="basicsCollapseTwo" class="accordion-collapse collapse" aria-labelledby="basicsHeadingFour" data-bs-parent="#basicsAccordion2">
+                                                <div class="px-4 py-2">
+                                                    Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <!-- End Card -->
+    
+                                        <!-- Card -->
+                                        <div class="accordion" id="basicsAccordion3">
+                                            <div class="border-bottom border-color-1 border-dotted-bottom">
+                                              <div class="p-3" id="basicsHeadingFour">
+                                                <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" id="FourstylishRadio3" name="stylishRadio">
+                                                  <label class="custom-control-label form-label" for="FourstylishRadio3" data-bs-toggle="collapse" data-bs-target="#basicsCollapseThree" aria-expanded="true" aria-controls="basicsCollapseThree">
+                                                    Cash on delivery
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div id="basicsCollapseThree" class="accordion-collapse collapse" aria-labelledby="basicsHeadingFour" data-bs-parent="#basicsAccordion3">
+                                                <div class="px-4 py-2">
+                                                    Pay with cash upon delivery.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <!-- End Card -->
+    
+                                        <!-- Card -->
+                                        <div class="accordion" id="basicsAccordion4">
+                                            <div class="border-bottom border-color-1 border-dotted-bottom">
+                                              <div class="p-3" id="basicsHeadingFour">
+                                                <div class="custom-control custom-radio">
+                                                  <input type="radio" class="custom-control-input" id="FourstylishRadio4" name="stylishRadio">
+                                                  <label class="custom-control-label form-label" for="FourstylishRadio4" data-bs-toggle="collapse" data-bs-target="#basicsCollapseFour" aria-expanded="true" aria-controls="basicsCollapseFour">
+                                                    PayPal <a href="#" class="text-blue">What is PayPal?</a>
+                                                  </label>
+                                                </div>
+                                              </div>
+                                              <div id="basicsCollapseFour" class="accordion-collapse collapse" aria-labelledby="basicsHeadingFour" data-bs-parent="#basicsAccordion4">
+                                                <div class="px-4 py-2">
+                                                  Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <!-- End Card -->
+                                    <!-- End Basics Accordion -->
+                                </div>
+                                <div class="form-group d-flex align-items-center justify-content-between px-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck10" required="" data-msg="Please agree terms and conditions." data-error-class="u-has-error" data-success-class="u-has-success">
+                                        <label class="form-check-label form-label" for="defaultCheck10">
+                                            I have read and agree to the website <a href="#" class="text-blue">terms and conditions </a>
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                  <div class="checkout-btn mx-3 my-4">
+                                    <a href="checkout.html" class="btn btn-primary btn-lg w-100">Place Order</a>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+             </div>
+        </div>
      </main>
    
-    <!-- Footer Section -->
-    <footer class="mt-100">
+     <!-- Footer Section -->
+     <footer class="mt-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-md-0">
@@ -353,7 +611,6 @@
         </div>
     </footer>
     <!-- End Footer Section -->
-
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.ez-plus.js"></script>

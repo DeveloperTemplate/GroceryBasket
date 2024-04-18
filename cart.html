@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | ElectraHive eCommerce</title>
+    <title>Cart | ElectraHive eCommerce</title>
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- Header Section Start -->
-    <header class="navigation shadow-sm border-bottom">
+     <!-- Header Section Start -->
+     <header class="navigation shadow-sm border-bottom">
         <!-- Navbar Sticky -->
         <div class="navbar-sticky">
             <!-- Navbar -->
@@ -210,60 +210,112 @@
         <!-- Navbar Sticky -->
     </header>
 <!-- Header Section End -->
+
     <main>
-        <!-- section -->
-        <section class="mt-100 login-section">
-           <div class="container">
-              <!-- row -->
-              <div class="row justify-content-center align-items-center px-3">
-                 <!-- col -->
-                 <div class="col-xs-12 col-md-6">
-                    <div class="item">
-                        <div class="mb-1">
-                            <h1>Create An Account</h1>
-                        </div>
-                        <form>
-                            <div class="row g-3">
-                                <!-- row -->
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formFirstName" placeholder="Enter First Name" required="">
+        <!-- section-->
+         <div class="product-wishlist">
+            <div class="mt-4">
+                <div class="container">
+                   <!-- row -->
+                   <div class="row">
+                      <!-- col -->
+                      <div class="col-12">
+                         <!-- breadcrumb -->
+                         <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                               <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                               <li class="breadcrumb-item"><a href="#!">Shop</a></li>
+                               <li class="breadcrumb-item active" aria-current="page">My Cart</li>
+                            </ol>
+                         </nav>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <!-- section -->
+             <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-10">
+                            <div class="p-5">
+                                <div class="d-flex justify-content-between align-items-center mb-5">
+                                    <h1 class="fw-bold mb-0 text-black text-uppercase">My Cart</h1>
+                                    <h5 class="mb-0  fw-bold border py-2 px-4 text-muted">2 Items</h5>
                                 </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formLastName" class="form-label">Last Name<span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formLastName" placeholder="Enter Last Name" required="">
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formSigninEmail" class="form-label">Email<span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formSigninEmail" placeholder="Enter Email" required="">
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <div class="password-field position-relative">
-                                        <label for="formSigninPassword" class="form-label">Password<span class="text-danger">*</span></label>
-                                        <div class="password-field position-relative">
-                                        <input type="password" class="form-control bg-light border-0 py-2" id="formSigninPassword" placeholder="Enter Password" required="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- btn -->
-                                <div class="d-flex justify-content-between mt-4">
-                                    <button type="submit" class="btn btn-primary px-4">Create</button>
+                                <hr class="my-4">
+                                <div class="table-responsive cart-container">
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col"></th>
+                                          <th scope="col">Product</th>
+                                          <th scope="col">Price</th>
+                                          <th scope="col">Quantity</th>
+                                          <th scope="col">Total</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row" class="align-middle" width="20%">
+                                           <a href="#" class="text-muted me-3 remove-item" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Delete" data-bs-original-title="Delete">
+                                            <i class="bi bi-trash"></i>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/product/Apple-first.png" class="img-fluid rounded-3" width="100" alt="Apple-first">
+                                            </a>
+                                          </th>
+                                          <td class="align-middle" width="30%">
+                                            <a href="#" class="text-black">Apple</a></td>
+                                          <td class="align-middle" width="15%">$10.00</td>
+                                          <td class="align-middle" width="20%">
+                                            <div class="qty-container">
+                                                <button class="qty-btn-minus count-decreament" type="button"><i class="bi bi-dash"></i></button>
+                                                <input type="number" name="qty" value="1" class="input-qty input-cornered"/>
+                                                <button class="qty-btn-plus count-increament" type="button"><i class="bi bi-plus"></i></button>
+                                            </div>
+                                          </td>
+                                          <td class="align-middle" width="15%">$20.00</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+
+                                <div class="col-md-4 ms-auto">
+                                      <div class="mt-2">
+                                        <table class="table">
+                                            <tr>
+                                                <td>Subtotal</td>
+                                                <td class="text-right">$100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Discount</td>
+                                                <td class="text-right">$10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shipping Fee</td>
+                                                <td class="text-right">$10</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="fw-bold">Total</td>
+                                                <td class="text-right fw-bold">$110</td>
+                                            </tr>
+                                         </table>
+                                      </div>
+                                      <div class="checkout-btn mt-5">
+                                        <a href="checkout.html" class="btn btn-primary btn-lg w-100">Continue to checkout</a>
+                                      </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                 </div>
-              </div>
-           </div>
-        </section>
+                </div>
+             </section>
+         </div>
      </main>
    
-    <!-- Footer Section -->
-    <footer class="mt-100">
+     <!-- Footer Section -->
+     <footer class="mt-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-md-0">
@@ -353,7 +405,6 @@
         </div>
     </footer>
     <!-- End Footer Section -->
-
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.ez-plus.js"></script>

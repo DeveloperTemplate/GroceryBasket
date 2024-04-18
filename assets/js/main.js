@@ -132,17 +132,17 @@ if (slider && priceRangeValue) {
 }
 
 
-if ($('#product-img-zoom').length > 0) {
-    ZoomActive();
-}
+// if ($('#product-img-zoom').length > 0) {
+//     ZoomActive();
+// }
 
-function ZoomActive() {
-    $('#product-img-zoom').ezPlus({
-        zoomType: 'inner',
-        cursor: 'crosshair',
-        borderSize: 0
-    });
-}
+// function ZoomActive() {
+//     $('#product-img-zoom').ezPlus({
+//         zoomType: 'inner',
+//         cursor: 'crosshair',
+//         borderSize: 0
+//     });
+// }
 
 var $sliderSingle = initSlider();
 
@@ -182,22 +182,17 @@ var $sliderSingle = initSlider();
     }
 
     // Function to update the active image and zoom
-    function updateActiveImageAndZoom() {
+    function updateActiveImage() {
         var activeImgSrc = getImageOfActiveSlide();
-        if (activeImgSrc && $('#product-img-zoom').length > 0) {
-            $('#product-img-zoom img').attr('src', activeImgSrc);
-            $('#product-img-zoom').data('zoom-image', activeImgSrc).ezPlus({
-                zoomType: 'inner',
-                cursor: 'crosshair',
-                borderSize: 0
-            });
+        if (activeImgSrc && $('#product-img-active').length > 0) {
+            $('#product-img-active img').attr('src', activeImgSrc);
         }
     }
 
     // Event listener for slider change
     if ($sliderSingle) {
         $sliderSingle.on('afterChange', function (event, slick, currentSlide) {
-            updateActiveImageAndZoom();
+            updateActiveImage();
         });
     }
 

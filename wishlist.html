@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup | ElectraHive eCommerce</title>
+    <title>Wishlist | ElectraHive eCommerce</title>
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- Header Section Start -->
-    <header class="navigation shadow-sm border-bottom">
+     <!-- Header Section Start -->
+     <header class="navigation shadow-sm border-bottom">
         <!-- Navbar Sticky -->
         <div class="navbar-sticky">
             <!-- Navbar -->
@@ -210,60 +210,92 @@
         <!-- Navbar Sticky -->
     </header>
 <!-- Header Section End -->
+
     <main>
-        <!-- section -->
-        <section class="mt-100 login-section">
-           <div class="container">
-              <!-- row -->
-              <div class="row justify-content-center align-items-center px-3">
-                 <!-- col -->
-                 <div class="col-xs-12 col-md-6">
-                    <div class="item">
-                        <div class="mb-1">
-                            <h1>Create An Account</h1>
-                        </div>
-                        <form>
-                            <div class="row g-3">
-                                <!-- row -->
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formFirstName" placeholder="Enter First Name" required="">
+        <!-- section-->
+         <div class="product-wishlist">
+            <div class="mt-4">
+                <div class="container">
+                   <!-- row -->
+                   <div class="row">
+                      <!-- col -->
+                      <div class="col-12">
+                         <!-- breadcrumb -->
+                         <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-0">
+                               <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                               <li class="breadcrumb-item"><a href="#!">Shop</a></li>
+                               <li class="breadcrumb-item active" aria-current="page">My Wishlist</li>
+                            </ol>
+                         </nav>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <!-- section -->
+             <section class="mt-5 mb-5">
+                <div class="container">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-lg-10">
+                            <div class="p-5">
+                                <div class="d-flex justify-content-between align-items-center mb-5">
+                                    <h1 class="fw-bold mb-0 text-black text-uppercase">Wishlist</h1>
+                                    <h5 class="mb-0  fw-bold border py-2 px-4 text-muted">2 Items</h5>
                                 </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formLastName" class="form-label">Last Name<span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formLastName" placeholder="Enter Last Name" required="">
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <label for="formSigninEmail" class="form-label">Email<span class="text-danger">*</span></label>
-                                    <input type="email" class="form-control bg-light border-0 py-2" id="formSigninEmail" placeholder="Enter Email" required="">
-                                </div>
-                                <div class="col-12">
-                                    <!-- input -->
-                                    <div class="password-field position-relative">
-                                        <label for="formSigninPassword" class="form-label">Password<span class="text-danger">*</span></label>
-                                        <div class="password-field position-relative">
-                                        <input type="password" class="form-control bg-light border-0 py-2" id="formSigninPassword" placeholder="Enter Password" required="">
-                                        </div>
+                                <hr class="my-4">
+                                <!-- Item -->
+                                <div class="mb-4 d-flex justify-content-between align-items-center overflow-x-auto border-bottom pb-4">
+                                    <div class="col-md-2 col-lg-2 col-xl-2 col-3 col-sm-3">
+                                        <img src="./assets/images/product/Apple-first.png" class="img-fluid rounded-3" width="100" alt="Apple-first">
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-3 col-4 col-sm-4 mx-3">
+                                        <p class="text-black mb-0 h5">Apple</p>
+                                        <span class="mt-2">$168</span>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2 col-3 col-sm-3">
+                                        <span class="badge bg-success">In Stock</span>
+                                    </div>
+                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 col-3 col-sm-3">
+                                        <a href="cart.html" class="btn btn-md btn-primary py-2 rounded"><span class="bi bi-cart mx-2"></span></a>
+                                    </div>
+                                    <div class="col-md-1 col-lg-1 col-xl-1 text-center col-1 col-sm-1">
+                                        <a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Delete" data-bs-original-title="Delete">
+                                            <i class="bi bi-trash"></i>
+                                         </a>
                                     </div>
                                 </div>
-                                <!-- btn -->
-                                <div class="d-flex justify-content-between mt-4">
-                                    <button type="submit" class="btn btn-primary px-4">Create</button>
+                                <!-- Item -->
+                                <div class="mb-4 d-flex justify-content-between align-items-center overflow-x-auto border-bottom pb-4">
+                                    <div class="col-md-2 col-lg-2 col-xl-2 col-3 col-sm-3">
+                                        <img src="./assets/images/product/banana-first.png" class="img-fluid rounded-3" width="100" alt="banana-first">
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-3 col-4 col-sm-4 mx-3">
+                                        <p class="text-black mb-0 h5">Banana</p>
+                                        <span class="mt-2">$68</span>
+                                    </div>
+                                    <div class="col-md-3 col-lg-3 col-xl-2 col-3 col-sm-3">
+                                        <span class="badge bg-success">In Stock</span>
+                                    </div>
+                                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1 col-3 col-sm-3">
+                                        <a href="cart.html" class="btn btn-md btn-primary py-2 rounded"><span class="bi bi-cart mx-2"></span></a>
+                                    </div>
+                                    <div class="col-md-1 col-lg-1 col-xl-1 text-center col-1 col-sm-1">
+                                        <a href="#" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Delete" data-bs-original-title="Delete">
+                                            <i class="bi bi-trash"></i>
+                                         </a>
+                                    </div>
                                 </div>
+                                
                             </div>
-                        </form>
+                        </div>
                     </div>
-                 </div>
-              </div>
-           </div>
-        </section>
+                </div>
+             </section>
+         </div>
      </main>
    
-    <!-- Footer Section -->
-    <footer class="mt-100">
+     <!-- Footer Section -->
+     <footer class="mt-100">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-md-0">
@@ -353,7 +385,6 @@
         </div>
     </footer>
     <!-- End Footer Section -->
-
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/jquery.ez-plus.js"></script>
