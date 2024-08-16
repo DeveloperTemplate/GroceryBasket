@@ -1311,3 +1311,17 @@ box-shadow: none;
   border-top: 1px solid #e5e7eb;
   padding: 14px 22px;
 }
+
+#product-img-active img {
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #product-img-active img {
+    max-width: 300px;
+  }
+}
