@@ -371,19 +371,9 @@ input:checked {
 }
 
 .product-footer {
-  display: none;
   transition: 0.5s ease;
   width: 100%;
 }
-
-.product-card:hover .product-footer{
-   display: block;
-}
-
-.product-card:hover .product-price{
-  display: none;
-}
-
 
 
 .product-card:hover {
@@ -481,11 +471,13 @@ input:checked {
   transition: 0.5s ease;
   font-weight: 500;
 }
+
 .product .product-card .btn-cart:hover {
   background-color: var(--btn-hover-bg) !important;
   border-color: transparent !important;
   color: var(--btn-hover-color) !important;
 }
+
 .product .nav .nav-link {
   color: #000 !important;
 }
@@ -494,6 +486,11 @@ input:checked {
   background-color: transparent !important;
 }
 
+.product .product-card a {
+  display: flex;
+  justify-content: flex-center;
+  align-items: center;
+}
 
 .product .product-card .image-first {
 	opacity: 1;
@@ -505,22 +502,37 @@ input:checked {
 	-moz-transition: all 500ms ease-in-out 0s;
 	-o-transition: all 500ms ease-in-out 0s;
 	-ms-transition: all 500ms ease-in-out 0s;
+  overflow: hidden;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-center;
+  align-items: center;
 }
 
 .product .product-card .image-second {
-	left: 0;
-    opacity: 0;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-center;
+  align-items: center;
+  opacity: 0;
 	-moz-opacity: 0;  
 	-khtml-opacity: 0;
 	-webkit-opacity: 0;
 	position: absolute;
-    right: 0;
+    left: 50%;
+    transform: translate(-50%);
     top: 0;
     transition: all 500ms ease-in-out 0s;
 	-webkit-transition: all 500ms ease-in-out 0s;
 	-moz-transition: all 500ms ease-in-out 0s;
 	-o-transition: all 500ms ease-in-out 0s;
 	-ms-transition: all 500ms ease-in-out 0s;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .product .product-card:hover .image-first {
@@ -528,13 +540,15 @@ input:checked {
 	-moz-opacity: 0;  
 	-khtml-opacity: 0; 
 	-webkit-opacity: 0; 
+  visibility: hidden;
 }
+
 .product .product-card:hover .image-second {
 	opacity: 1;
 	-moz-opacity: 1;  
 	-khtml-opacity: 1; 
 	-webkit-opacity: 1;
-	
+  visibility: visible;
 }
 
 

@@ -40,10 +40,14 @@ $(".category-slider").owlCarousel({
             items: 3,
         },
         600: {
-            items: 4,
+            items: 3,
 
         },
         1000: {
+            items: 4,
+        },
+        1200: {
+            nav: true,
             items: 6,
         },
     }
@@ -60,10 +64,14 @@ $(".product-slider").owlCarousel({
         },
         600: {
             nav: true,
-            items: 3,
+            items: 2,
 
         },
         1000: {
+            nav: true,
+            items: 3,
+        },
+        1200: {
             nav: true,
             items: 4,
         },
